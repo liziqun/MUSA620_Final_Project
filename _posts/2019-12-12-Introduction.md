@@ -8,7 +8,7 @@ tags:
   - Python
   - Business Interests
 ---
-![airbnb](https://github.com/liziqun/MUSA620_Final_Project/blob/master/assets/photo/airbnb.png)
+![airbnb](https://raw.github.com/liziqun/MUSA620_Final_Project/blob/master/assets/photo/airbnb.png)
 
 **Airbnb** is an online marketplace for arranging or offering lodging, primarily homestays, or tourism experiences. For Airbnb hosts, this is a potentially lucrative option for their under-utilised vacation homes, spare rooms or even beds. However, Airbnb still has some unmet needs:On one hand, it is difficult for new hosts to ascertain whether the Airbnb will be a worthy investment and how their property could earn more. On the other hand, for the Airbnb company, encouraging hosts gain more potential revenue might also helping expand market share.
 
