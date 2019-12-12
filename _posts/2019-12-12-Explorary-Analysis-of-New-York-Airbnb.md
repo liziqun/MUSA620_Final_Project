@@ -10,7 +10,7 @@ toc_sticky: true
 
 # 1.1 Data 
 
-The data used in this project are mainly from [InsideAirbnb][InsideAirbnb], [NYC OpenData][NYC OpenData] and [OpenStreetMap][OpenStreetMap]. For more information, please check out the link above.
+The data used in this project are mainly from [InsideAirbnb][InsideAirbnb], [NYC OpenData][NYC OpenData] and [OpenStreetMap][OpenStreetMap]. For more information, please check out the provided links.
 
 [InsideAirbnb]: http://insideairbnb.com/beijing/?neighbourhood=&filterEntireHomes=false&filterHighlyAvailable=false&filterRecentReviews=false&filterMultiListings=false
 [NYC OpenData]: https://opendata.cityofnewyork.us/
