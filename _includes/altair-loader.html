@@ -1,0 +1,33 @@
+{% comment %} Load a JSON spec for vega-lite into the specified container using
+vegaEmbed {% endcomment %}
+<style>
+  .vega-actions a {
+    margin-right: 12px;
+    color: #757575;
+    font-weight: normal;
+    font-size: 13px;
+  }
+  .error {
+    color: red;
+  }
+</style>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm//vega"
+></script>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm//vega-lite"
+></script>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm//vega-embed"
+></script>
+
+<script type="text/javascript">
+  {% for chart in page.altair-loader %}
+    vegaEmbed("#{{ chart[0] }}", "{{ site.baseurl }}/{{ chart[1] }}")
+      .then(function(result) {})
+      .catch(console.error);
+  {% endfor %}
+</script>

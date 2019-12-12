@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-23T19:26:29-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MUSA 620: Data Wrangling and Data Visualization</title><subtitle>Displaying cool data visualizations</subtitle><author><name>Nick Hand</name></author><entry><title type="html">Shootings in Philadelphia</title><link href="http://localhost:4000/shootings/" rel="alternate" type="text/html" title="Shootings in Philadelphia" /><published>2019-04-23T00:00:00-04:00</published><updated>2019-04-23T00:00:00-04:00</updated><id>http://localhost:4000/shootings</id><content type="html" xml:base="http://localhost:4000/shootings/">&lt;div id=&quot;title&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;viewof-slider&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;fullwidth&quot;&gt;
+  &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;heat-map-of-recent-shootings&quot;&gt;Heat Map of Recent Shootings&lt;/h1&gt;
+
+&lt;div class=&quot;fullwidth&quot;&gt;
+  &lt;div id=&quot;heatmap&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</content><author><name>Nick Hand</name></author><category term="dataviz" /><category term="shootings" /><category term="opendataphilly" /><category term="observable" /><summary type="html">Embedding Observable cells to show shootings in Philadelphia</summary></entry><entry><title type="html">This is a Test</title><link href="http://localhost:4000/test-post/" rel="alternate" type="text/html" title="This is a Test" /><published>2019-04-17T00:00:00-04:00</published><updated>2019-04-17T00:00:00-04:00</updated><id>http://localhost:4000/test-post</id><content type="html" xml:base="http://localhost:4000/test-post/">&lt;h1 id=&quot;section-1&quot;&gt;Section 1&lt;/h1&gt;
+
+&lt;p&gt;This is an example post.&lt;/p&gt;</content><author><name>Nick Hand</name></author><category term="dataviz" /><category term="altair" /><category term="vega-lite" /><category term="observable" /><category term="holoviews" /><summary type="html">Test</summary></entry><entry><title type="html">Embedding Folium charts</title><link href="http://localhost:4000/folium-charts/" rel="alternate" type="text/html" title="Embedding Folium charts" /><published>2019-04-13T00:00:00-04:00</published><updated>2019-04-13T00:00:00-04:00</updated><id>http://localhost:4000/folium-charts</id><content type="html" xml:base="http://localhost:4000/folium-charts/">&lt;p&gt;This post will show examples of embedding interactive maps produced using &lt;a href=&quot;https://github.com/python-visualization/folium&quot;&gt;Folium&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;osmnx-and-street-networks&quot;&gt;OSMnx and Street Networks&lt;/h2&gt;
+
+&lt;div id=&quot;folium-chart-1&quot;&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;percentage-of-households-without-internet&quot;&gt;Percentage of Households without Internet&lt;/h2&gt;
+
+&lt;div id=&quot;folium-chart-2&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;See the &lt;a href=&quot;https://github.com/MUSA-620-Spring-2019/week-10/blob/master/lecture-10.ipynb&quot;&gt;week 10 lecture slides&lt;/a&gt; for the code that produced these plots.&lt;/p&gt;</content><author><name>Nick Hand</name></author><category term="dataviz" /><category term="folium" /><summary type="html">Embedding interactive Folium charts on static pages using Jekyll.</summary></entry><entry><title type="html">1 Chart, 3 Libraries</title><link href="http://localhost:4000/measles-charts/" rel="alternate" type="text/html" title="1 Chart, 3 Libraries" /><published>2019-04-13T00:00:00-04:00</published><updated>2019-04-13T00:00:00-04:00</updated><id>http://localhost:4000/measles-charts</id><content type="html" xml:base="http://localhost:4000/measles-charts/">&lt;p&gt;This post will show examples of embedding interactive charts produced using &lt;a href=&quot;https://altair-viz.github.io&quot;&gt;Altair&lt;/a&gt; &lt;a href=&quot;https://vega.github.io/vega-lite/&quot;&gt;Vega-Lite&lt;/a&gt; via &lt;a href=&quot;https://observablehq.com/&quot;&gt;Observable&lt;/a&gt;, and
+&lt;a href=&quot;http://holoviews.org/index.html&quot;&gt;Holoviews&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;altair-example&quot;&gt;Altair Example&lt;/h2&gt;
+
+&lt;p&gt;Below is a chart of the incidence of measles since 1928 for the 50 US states.&lt;/p&gt;
+
+&lt;div id=&quot;altair-chart&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;This was produced using Altair and embedded in this static web page. Note that you can also display Python code on this page:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;altair&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alt&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;renderers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;enable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'notebook'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;observable-example&quot;&gt;Observable Example&lt;/h2&gt;
+
+&lt;p&gt;The same plot produced using Vega-Lite in Observable. See &lt;a href=&quot;https://observablehq.com/@nickhand/embedding-altair-plots-in-observable&quot;&gt;this notebook&lt;/a&gt; for more details.&lt;/p&gt;
+
+&lt;div class=&quot;fullwidth&quot;&gt;
+  &lt;div id=&quot;vega-chart&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;holoviews-example&quot;&gt;Holoviews Example&lt;/h2&gt;
+
+&lt;p&gt;Lastly, the measles incidence produced using the Holoviews package:&lt;/p&gt;
+
+&lt;div id=&quot;holoviews-chart&quot;&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;note&quot;&gt;Note&lt;/h2&gt;
+
+&lt;p&gt;See the &lt;a href=&quot;https://raw.githubusercontent.com/nickhand/static-site-template/master/_posts/2019-04-13-measles-charts.md&quot;&gt;raw source code&lt;/a&gt; of this post for details on how these charts were embedded.&lt;/p&gt;
+
+&lt;p&gt;When embedding charts, you will likely need to adjust the width/height of the charts before embedding them in the page so they fit nicely when embedded.&lt;/p&gt;</content><author><name>Nick Hand</name></author><category term="dataviz" /><category term="altair" /><category term="vega-lite" /><category term="observable" /><category term="holoviews" /><summary type="html">Embedding interactive charts on static pages using Jekyll.</summary></entry></feed>
