@@ -10,9 +10,17 @@ toc_sticky: true
 
 ## 1.1 Data 
 
-This is an example post. The posts are written in markdown.
+The data used in this project are mainly from [InsideAirbnb][InsideAirbnb], [NYC OpenData][NYC OpenData] and [OpenStreetMap][OpenStreetMap]. For more information, please check out the link above.
 
-## 1.2 Data 
+[InsideAirbnb]: http://insideairbnb.com/beijing/?neighbourhood=&filterEntireHomes=false&filterHighlyAvailable=false&filterRecentReviews=false&filterMultiListings=false
+[NYC OpenData]: https://opendata.cityofnewyork.us/
+[OpenStreetMap]: https://www.openstreetmap.org/#map=4/38.01/-95.84
+
+## 1.2 Data Cleaning
+
+## 1.3 Spatial  distribution of New York Airbnb  (visualize by folium)
+
+### 1.4 Exploratory analysis of New York airbnb dataset (visualize by seaborn)
 
 Below, we show the distance between residential sales and the average distance to the 5 nearest 311 calls for abandoned cars.
 
