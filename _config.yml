@@ -16,11 +16,11 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale: "en-US"
-title: "MUSA 620: Data Wrangling and Data Visualization"
+title: "Hospitality in Era of Airbnb"
 title_separator: "-"
-name: "Nick Hand"
-description: "Displaying cool data visualizations"
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name: "Ziqun Li"
+description: "Final Project for MUSA620"
+url: https://liziqun.github.io/MUSA620_Final_Project/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
