@@ -20,7 +20,7 @@ The data used in this project are mainly from [InsideAirbnb][InsideAirbnb], [NYC
 
 ## 1.3 Spatial  distribution of New York Airbnb  (visualize by folium)
 
-### 1.4 Exploratory analysis of New York airbnb dataset (visualize by seaborn)
+## 1.4 Exploratory analysis of New York airbnb dataset (visualize by seaborn)
 
 Below, we show the distance between residential sales and the average distance to the 5 nearest 311 calls for abandoned cars.
 
