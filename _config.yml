@@ -105,11 +105,11 @@ analytics:
 
 # Site Author
 author:
-  name: "Nick Hand"
-  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "Director of Finance, Data, and Policy, Philadelphia Controller"
-  location: "Philadelphia"
-  email:
+  name: "Ziqun Li"
+  avatar: "/assets/photo/photo.jpg"
+  bio: " Master of Urban Spatial Analytics, University of Pennsylvania"
+  location: "Philadelphia, the United States"
+  email: liziqun@upenn.edu
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
