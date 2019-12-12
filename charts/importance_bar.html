@@ -1,0 +1,271 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>hvPlot Plot</title>
+      
+      
+        
+          
+        <style>
+            table.panel-df {
+                    margin-left: auto;
+                    margin-right: auto;
+                    border: none;
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                    color: black;
+                    font-size: 12px;
+                    table-layout: fixed;
+                }
+
+                .panel-df tr, th, td {
+                    text-align: right;
+                    vertical-align: middle;
+                    padding: 0.5em 0.5em !important;
+                    line-height: normal;
+                    white-space: normal;
+                    max-width: none;
+                    border: none;
+                }
+
+                .panel-df tbody {
+                    display: table-row-group;
+                    vertical-align: middle;
+                    border-color: inherit;
+                }
+
+                .panel-df tbody tr:nth-child(odd) {
+                    background: #f5f5f5;
+                }
+
+                .panel-df thead {
+                    border-bottom: 1px solid black;
+                    vertical-align: bottom;
+                }
+
+                .panel-df tr:hover {
+                    background: lightblue !important;
+                    cursor: pointer;
+                }
+
+        </style>
+        <style>
+            .widget-box {
+                	min-height: 20px;
+                	background-color: #f5f5f5;
+                	border: 1px solid #e3e3e3 !important;
+                	border-radius: 4px;
+                	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+                	box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+                	overflow-x: hidden;
+                	overflow-y: hidden;
+                }
+
+                .scrollable {
+                  overflow: scroll;
+                }
+
+                progress {
+                	appearance: none;
+                	-moz-appearance: none;
+                	-webkit-appearance: none;
+
+                	border: none;
+                	height: 20px;
+                	background-color: whiteSmoke;
+                	border-radius: 3px;
+                	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+                	color: royalblue;
+                	position: relative;
+                	margin: 0 0 1.5em;
+                }
+
+                progress[value]::-webkit-progress-bar {
+                	background-color: whiteSmoke;
+                	border-radius: 3px;
+                	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+                }
+
+                progress[value]::-webkit-progress-value {
+                	position: relative;
+
+                	background-size: 35px 20px, 100% 100%, 100% 100%;
+                	border-radius:3px;
+                }
+
+                progress.active:not([value])::before {
+                	background-position: 10%;
+                	animation-name: stripes;
+                	animation-duration: 3s;
+                	animation-timing-function: linear;
+                	animation-iteration-count: infinite;
+                }
+
+                progress[value]::-moz-progress-bar {
+                	background-size: 35px 20px, 100% 100%, 100% 100%;
+                	border-radius:3px;
+                }
+
+                progress:not([value])::-moz-progress-bar {
+                	border-radius:3px;
+                	background:
+                	linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.2) 33%, rgba(0, 0, 0, 0.2) 66%, transparent 66%) left/2.5em 1.5em;
+
+                }
+
+                progress.active:not([value])::-moz-progress-bar {
+                	background-position: 10%;
+                	animation-name: stripes;
+                	animation-duration: 3s;
+                	animation-timing-function: linear;
+                	animation-iteration-count: infinite;
+                }
+
+                progress.active:not([value])::-webkit-progress-bar {
+                	background-position: 10%;
+                	animation-name: stripes;
+                	animation-duration: 3s;
+                	animation-timing-function: linear;
+                	animation-iteration-count: infinite;
+                }
+
+                progress.primary[value]::-webkit-progress-value { background-color: #007bff; }
+                progress.primary:not([value])::before { background-color: #007bff; }
+                progress.primary:not([value])::-webkit-progress-bar { background-color: #007bff; }
+                progress.primary::-moz-progress-bar { background-color: #007bff; }
+
+                progress.secondary[value]::-webkit-progress-value { background-color: #6c757d; }
+                progress.secondary:not([value])::before { background-color: #6c757d; }
+                progress.secondary:not([value])::-webkit-progress-bar { background-color: #6c757d; }
+                progress.secondary::-moz-progress-bar { background-color: #6c757d; }
+
+                progress.success[value]::-webkit-progress-value { background-color: #28a745; }
+                progress.success:not([value])::before { background-color: #28a745; }
+                progress.success:not([value])::-webkit-progress-bar { background-color: #28a745; }
+                progress.success::-moz-progress-bar { background-color: #28a745; }
+
+                progress.danger[value]::-webkit-progress-value { background-color: #dc3545; }
+                progress.danger:not([value])::before { background-color: #dc3545; }
+                progress.danger:not([value])::-webkit-progress-bar { background-color: #dc3545; }
+                progress.danger::-moz-progress-bar { background-color: #dc3545; }
+
+                progress.warning[value]::-webkit-progress-value { background-color: #ffc107; }
+                progress.warning:not([value])::before { background-color: #ffc107; }
+                progress.warning:not([value])::-webkit-progress-bar { background-color: #ffc107; }
+                progress.warning::-moz-progress-bar { background-color: #ffc107; }
+
+                progress.info[value]::-webkit-progress-value { background-color: #17a2b8; }
+                progress.info:not([value])::before { background-color: #17a2b8; }
+                progress.info:not([value])::-webkit-progress-bar { background-color: #17a2b8; }
+                progress.info::-moz-progress-bar { background-color: #17a2b8; }
+
+                progress.light[value]::-webkit-progress-value { background-color: #f8f9fa; }
+                progress.light:not([value])::before { background-color: #f8f9fa; }
+                progress.light:not([value])::-webkit-progress-bar { background-color: #f8f9fa; }
+                progress.light::-moz-progress-bar { background-color: #f8f9fa; }
+
+                progress.dark[value]::-webkit-progress-value { background-color: #343a40; }
+                progress.dark:not([value])::-webkit-progress-bar { background-color: #343a40; }
+                progress.dark:not([value])::before { background-color: #343a40; }
+                progress.dark::-moz-progress-bar { background-color: #343a40; }
+
+                progress:not([value])::-webkit-progress-bar {
+                	border-radius: 3px;
+                	background:
+                	linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.2) 33%, rgba(0, 0, 0, 0.2) 66%, transparent 66%) left/2.5em 1.5em;
+                }
+                progress:not([value])::before {
+                	content:" ";
+                	position:absolute;
+                	height: 20px;
+                	top:0;
+                	left:0;
+                	right:0;
+                	bottom:0;
+                	border-radius: 3px;
+                	background:
+                	linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.2) 33%, rgba(0, 0, 0, 0.2) 66%, transparent 66%) left/2.5em 1.5em;
+                }
+
+                @keyframes stripes {
+                  from {background-position: 0%}
+                  to {background-position: 100%}
+                }
+        </style>
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.4.0.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="0a4df917-105b-49fa-98fa-e91cb19c495d" data-root-id="12454"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="12592">
+          {"09c5a034-53d7-4379-9a43-6408f5118eac":{"roots":{"references":[{"attributes":{"data_source":{"id":"12484","type":"ColumnDataSource"},"glyph":{"id":"12487","type":"HBar"},"hover_glyph":null,"muted_glyph":{"id":"12489","type":"HBar"},"nonselection_glyph":{"id":"12488","type":"HBar"},"selection_glyph":null,"view":{"id":"12491","type":"CDSView"}},"id":"12490","type":"GlyphRenderer"},{"attributes":{"source":{"id":"12484","type":"ColumnDataSource"}},"id":"12491","type":"CDSView"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"12503","type":"BoxAnnotation"},{"attributes":{"callback":null,"data":{"Feature":["x3_Entire home/apt","LaggedPrice","accommodates","bedrooms","logDistUni","bathrooms","logDistNoise","logDistSubway","logDistLight","logDistCrime","reviews_per_month","guests_included","logDistDirty","beds","x3_Hotel room","review_scores_rating","x2_Midtown","x2_Bedford-Stuyvesant","x2_West Village","x2_Gramercy","x2_Chelsea","x2_SoHo","x3_Private room","x3_Shared room","x2_Tribeca","x0_t","x2_Upper West Side","x2_Briarwood","x0_f","x2_Hell's Kitchen"],"Importance":{"__ndarray__":"kOq8N1W+3z80xq89UUe+P/+O1y3B/a8//JmoLjgxqD+AbODFJfGmPzjIEJs3gqQ/sdnvlYLkjz/qi819HZCPP8iRHI5RJI8/090+THYHjD8+cFizL9qHP5jdLOZauYc/5LxdbS6fhz/q6pX3MvqEP61PwPGmuYE/w41D4L/vgD/LMxAkL+p3P+SFGbB3BXQ/1fihTPcycj/e5lxV8PpwP//ttAbSLms/xWR5tD3Maj+ZyZX4zqloPxIJHgOeCGU/qArkV5eOYD99LEEcSL9dP2jK1zROqF0/RhECTHwCWz+zthiUlJlZPzkTFQ6q+Vc/","dtype":"float64","shape":[30]}},"selected":{"id":"12485","type":"Selection"},"selection_policy":{"id":"12502","type":"UnionRenderers"}},"id":"12484","type":"ColumnDataSource"},{"attributes":{"text":"","text_color":{"value":"black"},"text_font_size":{"value":"12pt"}},"id":"12455","type":"Title"},{"attributes":{"axis_label":"Feature","bounds":"auto","formatter":{"id":"12495","type":"CategoricalTickFormatter"},"major_label_orientation":"horizontal","ticker":{"id":"12469","type":"CategoricalTicker"}},"id":"12468","type":"CategoricalAxis"},{"attributes":{"grid_line_color":null,"ticker":{"id":"12464","type":"BasicTicker"}},"id":"12467","type":"Grid"},{"attributes":{},"id":"12473","type":"PanTool"},{"attributes":{},"id":"12476","type":"ResetTool"},{"attributes":{},"id":"12472","type":"SaveTool"},{"attributes":{"axis_label":"Importance","bounds":"auto","formatter":{"id":"12493","type":"BasicTickFormatter"},"major_label_orientation":"horizontal","ticker":{"id":"12464","type":"BasicTicker"}},"id":"12463","type":"LinearAxis"},{"attributes":{"overlay":{"id":"12503","type":"BoxAnnotation"}},"id":"12475","type":"BoxZoomTool"},{"attributes":{"callback":null,"renderers":[{"id":"12490","type":"GlyphRenderer"}],"tags":["hv_created"],"tooltips":[["Feature","@{Feature}"],["Importance","@{Importance}"]]},"id":"12453","type":"HoverTool"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#71c9ce"},"height":{"value":0.8},"line_alpha":{"value":0.1},"line_color":{"value":"white"},"right":{"field":"Importance"},"y":{"field":"Feature"}},"id":"12488","type":"HBar"},{"attributes":{"callback":null,"end":0.4959919971767386,"reset_end":0.4959919971767386,"reset_start":0.0,"tags":[[["Importance","Importance",null]]]},"id":"12451","type":"Range1d"},{"attributes":{},"id":"12461","type":"CategoricalScale"},{"attributes":{"callback":null,"factors":["x2_Hell's Kitchen","x0_f","x2_Briarwood","x2_Upper West Side","x0_t","x2_Tribeca","x3_Shared room","x3_Private room","x2_SoHo","x2_Chelsea","x2_Gramercy","x2_West Village","x2_Bedford-Stuyvesant","x2_Midtown","review_scores_rating","x3_Hotel room","beds","logDistDirty","guests_included","reviews_per_month","logDistCrime","logDistLight","logDistSubway","logDistNoise","bathrooms","logDistUni","bedrooms","accommodates","LaggedPrice","x3_Entire home/apt"],"tags":[[["Feature","Feature",null]]]},"id":"12452","type":"FactorRange"},{"attributes":{},"id":"12464","type":"BasicTicker"},{"attributes":{},"id":"12474","type":"WheelZoomTool"},{"attributes":{},"id":"12469","type":"CategoricalTicker"},{"attributes":{"dimension":1,"grid_line_color":null,"ticker":{"id":"12469","type":"CategoricalTicker"}},"id":"12471","type":"Grid"},{"attributes":{},"id":"12502","type":"UnionRenderers"},{"attributes":{},"id":"12493","type":"BasicTickFormatter"},{"attributes":{"align":null,"below":[{"id":"12463","type":"LinearAxis"}],"center":[{"id":"12467","type":"Grid"},{"id":"12471","type":"Grid"}],"left":[{"id":"12468","type":"CategoricalAxis"}],"margin":null,"min_border_bottom":10,"min_border_left":10,"min_border_right":10,"min_border_top":10,"plot_height":500,"plot_width":700,"renderers":[{"id":"12490","type":"GlyphRenderer"}],"sizing_mode":"fixed","title":{"id":"12455","type":"Title"},"toolbar":{"id":"12477","type":"Toolbar"},"x_range":{"id":"12451","type":"Range1d"},"x_scale":{"id":"12459","type":"LinearScale"},"y_range":{"id":"12452","type":"FactorRange"},"y_scale":{"id":"12461","type":"CategoricalScale"}},"id":"12454","subtype":"Figure","type":"Plot"},{"attributes":{"fill_color":{"value":"#71c9ce"},"height":{"value":0.8},"line_color":{"value":"white"},"right":{"field":"Importance"},"y":{"field":"Feature"}},"id":"12487","type":"HBar"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"#71c9ce"},"height":{"value":0.8},"line_alpha":{"value":0.2},"line_color":{"value":"white"},"right":{"field":"Importance"},"y":{"field":"Feature"}},"id":"12489","type":"HBar"},{"attributes":{},"id":"12459","type":"LinearScale"},{"attributes":{},"id":"12495","type":"CategoricalTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"12453","type":"HoverTool"},{"id":"12472","type":"SaveTool"},{"id":"12473","type":"PanTool"},{"id":"12474","type":"WheelZoomTool"},{"id":"12475","type":"BoxZoomTool"},{"id":"12476","type":"ResetTool"}]},"id":"12477","type":"Toolbar"},{"attributes":{},"id":"12485","type":"Selection"}],"root_ids":["12454"]},"title":"Bokeh Application","version":"1.4.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('12592').textContent;
+                  var render_items = [{"docid":"09c5a034-53d7-4379-9a43-6408f5118eac","roots":{"12454":"0a4df917-105b-49fa-98fa-e91cb19c495d"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
