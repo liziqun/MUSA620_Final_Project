@@ -1,5 +1,5 @@
 ---
-title: "Part 1. Exploratory Analysis of New York Airbnb "
+title: " Exploratory Analysis of New York Airbnb "
 date: 2019-12-12
 published: true
 tags: [python, seaborn, folium, interactive map]
@@ -8,19 +8,16 @@ toc: true
 toc_sticky: true
 ---
 
-# 1.1 Data 
+### Data 
+In the very first beginning, we load the Airbnb data (from [InsideAirbnb][InsideAirbnb]) and New York neighborhood data (from [NYC OpenData][NYC OpenData]), and do some data processing and basic visualization for the New York Airbnb listings. To be more specific, 
 
-The data used in this project are mainly from [InsideAirbnb][InsideAirbnb], [NYC OpenData][NYC OpenData] and [OpenStreetMap][OpenStreetMap]. For more information, please check out the provided links.
 
 [InsideAirbnb]: http://insideairbnb.com/beijing/?neighbourhood=&filterEntireHomes=false&filterHighlyAvailable=false&filterRecentReviews=false&filterMultiListings=false
 [NYC OpenData]: https://opendata.cityofnewyork.us/
-[OpenStreetMap]: https://www.openstreetmap.org/#map=4/38.01/-95.84
 
-## 1.2 Data Cleaning
+### Spatial  distribution of New York Airbnb  (visualize by folium)
 
-## 1.3 Spatial  distribution of New York Airbnb  (visualize by folium)
-
-## 1.4 Exploratory analysis of New York airbnb dataset (visualize by seaborn)
+### Exploratory analysis of New York airbnb dataset (visualize by seaborn)
 
 Below, we show the distance between residential sales and the average distance to the 5 nearest 311 calls for abandoned cars.
 
