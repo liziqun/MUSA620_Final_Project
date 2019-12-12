@@ -8,7 +8,7 @@ tags:
   - Python
   - Business Interests
 ---
-![airbnb]({{ site.url }}{./assets/photo/airbnb.png)
+![airbnb](./assets/photo/airbnb.png)
 
 **Airbnb** is an online marketplace for arranging or offering lodging, primarily homestays, or tourism experiences. For Airbnb hosts, this is a potentially lucrative option for their under-utilised vacation homes, spare rooms or even beds. However, Airbnb still has some unmet needs:On one hand, it is difficult for new hosts to ascertain whether the Airbnb will be a worthy investment and how their property could earn more. On the other hand, for the Airbnb company, encouraging hosts gain more potential revenue might also helping expand market share.
 
@@ -20,8 +20,3 @@ Generally, this project would be devided into 4 parts:
 - Find the Top-Earned Airbnb for Hosts in New York 
 - Pricing Tip Prediction for New Hosts in New York 
 
-Besides, the data used in this project are mainly from [InsideAirbnb][InsideAirbnb], [NYC OpenData][NYC OpenData] and [OpenStreetMap][OpenStreetMap]. For more information, please check out the link above.
-
-[InsideAirbnb]: http://insideairbnb.com/beijing/?neighbourhood=&filterEntireHomes=false&filterHighlyAvailable=false&filterRecentReviews=false&filterMultiListings=false
-[NYC OpenData]: https://opendata.cityofnewyork.us/
-[OpenStreetMap]: https://www.openstreetmap.org/#map=4/38.01/-95.84
