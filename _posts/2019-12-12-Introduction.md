@@ -20,3 +20,8 @@ Generally, this project would be devided into 4 parts:
 - Find the Top-Earned Airbnb for Hosts in New York 
 - Pricing Tip Prediction for New Hosts in New York 
 
+The data used in this project are mainly from [InsideAirbnb][InsideAirbnb], [NYC OpenData][NYC OpenData] and [OpenStreetMap][OpenStreetMap]. For more information, please check out the provided links.
+
+[InsideAirbnb]: http://insideairbnb.com/beijing/?neighbourhood=&filterEntireHomes=false&filterHighlyAvailable=false&filterRecentReviews=false&filterMultiListings=false
+[NYC OpenData]: https://opendata.cityofnewyork.us/
+[OpenStreetMap]: https://www.openstreetmap.org/#map=4/38.01/-95.84
