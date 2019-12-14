@@ -14,4 +14,4 @@ Generally, the project was divided into 4 parts:
 - Find the Characteristics Top-Earned Airbnb for Hosts in New York
 - Pricing Tip Prediction for New Hosts in New York
 
-For detailed informationm, click: https://liziqun.github.io/MUSA620_Final_Project/
+For web-based page, please click: https://liziqun.github.io/MUSA620_Final_Project/
