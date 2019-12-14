@@ -1,6 +1,7 @@
-# Hospitality in Era of Airbnb
-**Ziqun Li**  
-**Final Project for MUSA-620 **   
+# Hospitality in Era of Airbnb  
+
+**Ziqun Li**   
+**Final Project for MUSA-620**   
 **December 14,2019**   
 
 ## Introduction
