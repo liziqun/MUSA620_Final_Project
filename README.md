@@ -5,7 +5,7 @@
 **Final Project for MUSA-620**    
 **December 14,2019**   
   
-[![Binder](https://mybinder.org/badge_logo.svg)] (https://mybinder.org/v2/gh/liziqun/MUSA620_Final_Project/Data & Code/MUSA620_final project code.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)] (https://mybinder.org/v2/gh/liziqun/MUSA620_Final_Project/Data&Code/MUSA620_final_project_code.ipynb)
 
 This project aims to set up a series of mechanism to satisfy the needs of Airbnb users, which could not only served as a guidance for both the Airbnb hosts and guests, but also can be used as an additional function that provided by Airbnb company for those premium users, in order to create more benefits for enterprise.
 
